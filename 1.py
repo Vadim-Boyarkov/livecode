@@ -1,6 +1,7 @@
 import datetime
 import random
 
+
 def random_list():
     list1 = list()
     for id in range(random.randint(3,34)):
@@ -17,6 +18,7 @@ def time_dekor(func):
         return print(rezult)
     return inner
 
+
 @time_dekor
 def maxElement(list):
     a = list[0]
@@ -24,6 +26,7 @@ def maxElement(list):
         if a < element:
             a = element
     return print(a)
+
 
 test_list = random_list()
 print(test_list)
